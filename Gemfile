@@ -27,6 +27,17 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+group :test do
+  # Pretty printed test output
+  gem 'turn', :require => false
+end
+
+# gemfile
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+  gem 'pg'
+end
+
 group :development do 
   gem 'rspec-rails', '2.0.0.beta18'
 end
