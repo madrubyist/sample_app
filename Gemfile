@@ -39,9 +39,11 @@ group :production do
 end
 
 group :development do 
-  gem 'rspec-rails', '2.0.0.beta18'
+  gem 'rspec-rails', '2.6.1.beta1'
+  gem 'annotate', '2.4.1.beta1'
+  gem 'rake', '0.8.7'
 end
 
 group :test do 
-  gem 'rspec', '2.0.0.beta18'
+  gem 'rspec', '2.6'
 end

@@ -5,3 +5,9 @@
 require File.expand_path('../config/application', __FILE__)
 
 SampleApp::Application.load_tasks
+
+require File.expand_path('../config/application', __FILE__)
+#require 'rake/dsl_definition'
+require 'rake'
+
+SampleApp::Application.send :include, ::Rake::DSL if defined? ::Rake::DSL 
